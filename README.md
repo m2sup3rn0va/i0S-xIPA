@@ -24,7 +24,7 @@ The best part about this is there is no need of **Frida** as we are not **hookin
 
 
 Just one application to be installed on **iPhone** or **iPAD** which is **Filza** which can come handy to get app names.
-All you have to do is to run the script and provide all details and it will download the extracted IPA in your **$PWD** which you can later use for re-installation.
+All you have to do is to run the script and provide all details and it will download the extracted IPA in your **$PWD** which you can later use for re-installation. Just `scp` your downloaded **IPA** file to **iDevice** and use **Filza** to install.
 
 I tested it with most of the applications including **Banking** ones and it's working just fine. Let me know if it breaks anywhere.
 
