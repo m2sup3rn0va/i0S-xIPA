@@ -14,6 +14,9 @@
 * An **iOS** app called **Filza** - Optional but comes handy to get app names
 * Supports **Python3** only
 * **MOST IMPORTANT** - A **JailBroken iDevice**
+* Supporting **PIP** libraries to be installed:
+    * For SSH - `python3.8 -m pip install --upgrade paramiko`
+    * For Command Line Argument Parsing - `python3.8 -m pip install --upgrade argparse`
 
 ## Summary
 
@@ -28,7 +31,40 @@ All you have to do is to run the script and provide all details and it will down
 
 I tested it with most of the applications including **Banking** ones and it's working just fine. Let me know if it breaks anywhere.
 
+
+> Make sure that the app is running on your **iDevice** before you start the script
+
+> Extraction process will become slow if your **iDevice** sleeps. Make sure that the **iDevice** is wide awake
+
+
 ## Screenshots
 
+* **xIPA - Help**
+
+    ![](attachments/xIPA_help.png)
+
+* **xIPA - Missing iDevice IP to SSH**
+
+    ![](attachments/xIPA_error_hostIP.png)
+
+* **xIPA - Missing App Display Name to Extract {target}**
+
+    ![](attachments/xIPA_error_appName.png)
+
+* **xIPA - Missing Extracted App Name {-o/--output}**
+
+    ![](attachments/xIPA_error_outputName.png)
+
+* **xIPA - App not running**
+
+    ![](attachments/xIPA_error_appnotrunning.png)
+
+* **xIPA - Success: Extracted IPA of VLC App**
+
+    ![](attachments/xIPA_success_extractedIPA.png)
+
+* **xIPA - Success: Downloaded Extracted IPA**
+
+    ![](attachments/xIPA_success_downloadedIPA.png)
 
 > **DISCLAIMER** : **JailBreak** your device at our own risk. This is just to provide **information** and is for **knowledge sharing**.
