@@ -1,0 +1,42 @@
+#! /bin/bash
+
+# Setting Arguments
+app_path=$1
+ex_ipa_name=$2
+
+# Initiating Alignment
+echo "[+] Initiating App Alignment"
+
+unzip -q $ex_ipa_name
+if [ $? -eq 0 ]
+then
+	echo "[+] Unzipped"
+else
+	echo "[+] Error in Unzipping. Fix Manually."
+	exit
+fi
+
+mv -f $app_path'Payload' .
+if [ $? -eq 0 ]
+then
+	echo "[+] Payload Extracted"
+else
+	echo "[+] Error in extracting Payload folder. Fix Manually."
+	exit
+fi
+
+zip -9rq Payload.zip Payload
+if [ $? -eq 0 ]
+then
+	echo "[+] Re-Zipped"
+else
+	echo "[+] Error in zipping. Fix Manually."
+	exit
+fi
+
+mv -f Payload.zip $ex_ipa_name
+
+# CleanUp
+rm -rf Payload var
+
+
