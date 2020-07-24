@@ -17,8 +17,7 @@
 
 ## Summary
 
-I came across the idea to write this script when I faced issue extracting the IPA file for analysis. We have a great tool called **"frida-ios-dump"**, but unfortunately was not working for me. There were lot of errors related to **"diskimagemount"** or **"hooking"** to the process via **"frida"**. The other reason was to learn how to
-write similar codes.
+I came across the idea to write this script when I faced issue extracting the IPA file for analysis. We have a great tool called [**frida-ios-dump**](https://github.com/AloneMonkey/frida-ios-dump), but unfortunately was not working for me. There were lot of errors related to **"diskimagemount"** or **"hooking"** to the process via **"frida"**. The other reason was to learn how to write similar codes.
 
 So, finally I came up with my own **"python script"**, to extract **IPAs** of installed applications for analysis.
 The best part about this is there is no need of **Frida** as we are not **hooking** into any process nor we need **USB** connection to get the **IPA**.
