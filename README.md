@@ -12,7 +12,7 @@
 
 * Any linux distro
 * An **iOS** app called **Filza** - Optional but comes handy to get app names
-* Supports Python3 only
+* Supports **Python3** only
 * **MOST IMPORTANT** - A **JailBroken iDevice**
 
 ## Summary
