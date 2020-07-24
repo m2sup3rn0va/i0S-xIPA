@@ -29,4 +29,5 @@ All you have to do is to run the script and provide all details and it will down
 
 I tested it with most of the applications including **Banking** ones and it's working just fine. Let me know if it breaks anywhere.
 
-**DISCLAIMER** : **JailBreak** your device at our own risk. This is just to provide **information** and is for **knowledge sharing**.
+
+> **DISCLAIMER** : **JailBreak** your device at our own risk. This is just to provide **information** and is for **knowledge sharing**.
