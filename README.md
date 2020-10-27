@@ -7,6 +7,8 @@
 * Script designed to extract **IPA** of an application installed on a **JailBroken iDevice**
 * Tested on multiple applications including **Banking** applications
 * Extracts and downloads the **IPA** to your **$PWD**
+* The app extracted and downloaded will be **"encrypted"** and you can check this by `otool -arch all -Vl "APP Bundle Name" | grep -A5 LC_ENCRYPT`
+* If **"cryptid=0"** means not encrypted else encrypted
 
 ## Pre-requisites
 
@@ -16,14 +18,9 @@
 * Supporting **PIP** libraries to be installed:
     * For SSH - `python3.8 -m pip install --upgrade paramiko`
     * For Command Line Argument Parsing - `python3.8 -m pip install --upgrade argparse`
+* Just one application to be installed on **iPhone** or **iPAD** which is **Filza** which can come handy to get app names.
 
 * **MOST IMPORTANT** - A **JailBroken iDevice**
-
-## Summary
-
-* I came across the idea to write this script when I faced issue extracting the IPA file for analysis. We have a great tool called [**frida-ios-dump**](https://github.com/AloneMonkey/frida-ios-dump), but unfortunately was not working for me. There were lot of errors related to **"diskimagemount"** or **"hooking"** to the process via **"frida"**. The other reason was to learn how to write similar codes.
-* So, finally I came up with my own **"python script"**, to extract **IPAs** of installed applications for analysis. The best part about this is there is no need of **Frida** as we are not **hooking** into any process nor we need **USB** connection to get the **IPA**.
-* Just one application to be installed on **iPhone** or **iPAD** which is **Filza** which can come handy to get app names.
 
 ## How does it work
 
